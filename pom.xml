@@ -30,6 +30,7 @@
         <module>safe-net-core</module>
         <module>safe-net-bungeecord</module>
         <module>safe-net-spigot</module>
+        <module>safe-net-folia</module>
         <module>safe-net-distribution</module>
     </modules>
     <name>SafeNET</name>

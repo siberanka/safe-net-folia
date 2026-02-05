@@ -1,0 +1,17 @@
+# Plugin info:
+name: ${parent.name}
+version: ${parent.version}
+author: dejvokep
+main: dev.dejvokep.safenet.folia.SafeNetFolia
+description: ${parent.description}
+api-version: "1.21"
+load: STARTUP
+folia-supported: true
+# Commands:
+commands:
+  safenet:
+    description: "The main command of SafeNET plugin."
+    usage: /safenet
+  sn:
+    description: "The main command of SafeNET plugin."
+    usage: /sn

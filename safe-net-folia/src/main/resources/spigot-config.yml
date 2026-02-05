@@ -1,0 +1,45 @@
+#
+# ███████╗ █████╗ ███████╗███████╗███╗   ██╗███████╗████████╗
+# ██╔════╝██╔══██╗██╔════╝██╔════╝████╗  ██║██╔════╝╚══██╔══╝
+# ███████╗███████║█████╗  █████╗  ██╔██╗ ██║█████╗     ██║
+# ╚════██║██╔══██║██╔══╝  ██╔══╝  ██║╚██╗██║██╔══╝     ██║
+# ███████║██║  ██║██║     ███████╗██║ ╚████║███████╗   ██║
+# ╚══════╝╚═╝  ╚═╝╚═╝     ╚══════╝╚═╝  ╚═══╝╚══════╝   ╚═╝
+#
+# Plugin made by dejvokep (https://dejvokep.dev/).
+#
+# ► Need any help?
+# Join the Discord server (https://discord.com/invite/BbhADEy) and we will more than happily help you :) (nonstop 24/7 bot support)
+#
+# Config version:
+# - IMPORTANT >> Do NOT change unless you know what you are doing. Changing this might break the plugin.
+config-version: 3
+# Passphrase (equal to what you set on the proxy):
+passphrase: ""
+# Property names used by the plugin for passphrase and session validation:
+property-name:
+  # Handshake (equal to the handshake property name on the proxy):
+  handshake: "safe_net_passphrase"
+  # Session (used only internally and on the backend, does not need to be the same everywhere):
+  session: "safe_net_session"
+# If to log connection data:
+# - IMPORTANT >> Data (encoded in base64) is logged into the console when a connection is denied, for easy access and
+#                analysis by server administrators. This data includes IP and other data associated with the player,
+#                which are usually sensitive, but essential to debugging when something happens.
+log-connection-data: false
+# Block server pings for unauthenticated requests:
+# - IMPORTANT >> Might not be available on legacy versions of Paper servers, and its forks. Check the console on early
+#                startup to see if this feature is supported on your server.
+#                Please note that this may break functionality of plugins that rely on pings to obtain server information.
+block-pings: false
+# Disconnect message sent to the player when the request is malformed or did not connect through the proxy server:
+# - "\n" can be used for a new line.
+disconnect-message: "&7[&6SafeNET&7] &cPlease connect with address: yourserver.com!\n\n&7&oIf you believe this is an error, contact server administrators."
+# Command messages:
+command:
+  # If a player runs the command:
+  console-only: "&7[&6SafeNET&7] Command is available only in the console."
+  # If the sender uses an invalid format of a command:
+  invalid-format: "&7[&6SafeNET&7] Invalid format! Please use &6/sn reload &7to reload the plugin."
+  # If plugin configuration is being reloaded (/sn reload):
+  reload: "&7[&6SafeNET&7] The plugin has been reloaded!"
