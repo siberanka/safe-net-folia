@@ -15,3 +15,6 @@ doc/
 .classpath
 .project
 *.iml
+*.txt
+*.log
+dependency-reduced-pom.xml
